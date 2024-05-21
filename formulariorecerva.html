@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVA DE HOTEL</title>
+    <link rel="icon" type="image/x-icon" href="../Golden/G.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Kanit:wght@700&family=Montserrat:wght@100&family=Poppins:ital,wght@1,100&family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Kanit:ital,wght@0,700;1,200&family=Lobster&family=Montserrat:wght@100&family=Poppins:ital,wght@1,100&family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylereservar.css">
+    <style>
+        body {
+            background-image: url('img/fondo1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 150vh;
+            margin-bottom: 18cm;
+            font-family: 'Kanit';
+        }
+        .contenido {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .navbar {
+            font-size: 2.6em;
+            font-family: 'Lobster';
+        }
+        .formulariotitulo {
+            border: 4px solid;
+            border-color: #c01a33;
+            color: rgb(2, 253, 232);
+            padding-top: 1cm;
+            padding-left: 1cm;
+            padding-right: 1cm;
+            border-radius: 10em;
+            font-family: 'Agbalumo';
+            font-size: 2em;
+            margin-right: cm;
+            font-weight: bold;
+            width: 600px;
+            height: 100px;
+            margin-top: 20px;
+            background: transparent;
+            backdrop-filter: blur(30px);
+            border-radius: 28px;
+        }
+        .inicio {
+            color: rgb(2, 253, 232);
+            font-family: 'Agbalumo';
+            border: 3px solid;
+            border-color: #c01a33;
+            border-radius: 40px;
+            text-align: center;
+            padding: 0.10%;
+            background: transparent;
+            backdrop-filter: blur(20px);
+            border-radius: 28px;
+        }
+        .titulo {
+            border-color: #c01a33;
+            margin-left: 20cm;
+        }
+        .datospersonales, .bordepago {
+            margin-right: 4cm;
+            margin-left: 5cm;
+            border-radius: 50px;
+            padding-bottom: 1cm;
+            padding-left: 3%;
+            padding-right: 3%;
+            font-family: 'Kanit';
+            font-weight: 800;
+            font-size: 1.7em;
+            background: transparent;
+            backdrop-filter: blur(9.8px);
+            border-radius: 28px;
+            color: aliceblue;
+            border-style: solid;
+            border-width: 10px;
+            border-image: linear-gradient(45deg, rgb(236, 3, 34), rgb(1, 5, 250)) 1;
+        }
+        .casillas {
+            border-radius: 10px;
+            border-color: #ec092b;
+            font-size: 1.1em;
+            font-family: 'Agbalumo';
+            padding: 0.2%;
+            text-align: center;
+            background: transparent;
+            backdrop-filter: blur(20px);
+            border-radius: 28px;
+            color: aliceblue;
+        }
+        .botonguardar {
+            margin-left: 4.9cm;
+            border-radius: 10px;
+            border-color: #c01a33;
+            font-size: 1.8em;
+            font-family: 'Agbalumo';
+            padding: 0.5cm;
+            background: transparent;
+            backdrop-filter: blur(28px);
+            border-radius: 28px;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+<div class="contenido">
+    <div class="cuadro"></div>
+</div>
+<header class="header">
+    <nav class="navbar">
+        <a href="index.html" target="_blank">Home</a>
+        <a href="about.html">About</a>
+        <a href="http://127.0.0.1:5500/index.html#kitchen">Services</a>
+        <a href="http://127.0.0.1:5500/index.html#contact">Contact</a>
+    </nav>
+</header>
+<table class="titulo">
+    <tr>
+        <th><br>
+            <h2 class="formulariotitulo"> FORMULARIO PARA RESERVA DE HABITACIONES</h2>
+        </th>
+    </tr>
+</table>
+<form action="formulariorecerva.php" method="post">
+    <fieldset class="datospersonales">
+        <legend><h3 class="inicio"><b>DATOS PERSONALES.</b></h3></legend>
+        <br>
+        Nombres: <input type="text" name="nombres" placeholder="Digite sus nombres" required class="casillas"><br><br>
+        Apellidos: <input type="text" name="apellidos" placeholder="Digite sus apellidos" required class="casillas"><br><br>
+        Cédula: <input type="text" name="cedula" placeholder="Digite su cédula" required pattern="[0-9]+" class="casillas"><br><br>
+        Nacionalidad: <input type="text" name="nacionalidad" placeholder="Digite su nacionalidad" required class="casillas"><br><br>
+        Teléfono: <input type="text" name="telefono" placeholder="Digite el teléfono" required pattern="[0-9]+" class="casillas"><br><br>
+        Email: <input type="email" name="email" placeholder="Digite su email" required class="casillas"><br><br>
+        Sexo: <select name="sexo" required class="casillas">
+            <option value="Seleccione opcion">Seleccione opción</option>
+            <option value="Mujer">Mujer</option>
+            <option value="Hombre">Hombre</option>
+        </select>
+        <br><br>
+        <h3 class="inicio"><b>Información de llegada y salida</b></h3>
+        <br>
+        Fecha de llegada: <input type="date" name="fechallegada" required class="casillas"><br><br>
+        Fecha de salida: <input type="date" name="fechasalida" required class="casillas"><br><br>
+        Número de noches: <select name="numeronoches" required class="casillas">
+            <option value="Seleccione opcion">Seleccione opción</option>
+            <option value="1noche">1 noche</option>
+            <option value="2noche">2 noches</option>
+            <option value="3noche">3 noches</option>
+            <option value="4noche">4 noches</option>
+            <option value="5noche">5 noches</option>
+            <option value="noche10">1 a 10 noches</option>
+            <option value="noche15">1 a 15 noches</option>
+            <option value="noche20">1 a 20 noches</option>
+            <option value="noche1mes">1 mes</option>
+            <option value="nochemesymedio">mes y medio</option>
+            <option value="noche2meses">2 meses</option>
+            <option value="noche3meses">3 meses</option>
+            <option value="otros">otros</option>
+        </select>
+        <br><br>
+        <b>Si usted eligió "otros" entonces indique:</b>
+        Cuántas noches: <input type="text" name="otro" placeholder="Digite cuántas noches" class="casillas">
+        <br><br>
+    </fieldset>
+    <fieldset class="bordepago">
+        <legend><h3 class="inicio"><b>PAGO Y GARANTÍA</b></h3></legend>
+        <h3 class="nota">Todas las reservas de hotel deben ser garantizadas con un número de tarjeta de crédito</h3><br>
+        Nombre de su Tarjeta de Crédito: <input type="text" name="nombretarjeta" placeholder="Digite su Tarjeta de Crédito" required class="casillas"><br><br>
+        Número de la Tarjeta de Crédito: <input type="text" name="numerotarjeta" placeholder="Número Tarjeta de Crédito" required pattern="[0-9]+" class="casillas"><br><br>
+        Nombre del titular: <input type="text" name="nombretitular" placeholder="Digite nombre del titular" required class="casillas"><br><br>
+        Firma del titular: <input type="text" name="firmatitular" placeholder="Digite firma del titular" required class="casillas"><br><br>
+    </fieldset>
+    <br><br>
+    <b><input type="submit" name="guardar" value="Guardar" class="botonguardar"></b>
+</form>
+</body>
+</html>

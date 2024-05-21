@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salones de evento</title>
+      <link rel="icon" type="image/x-icon" href="../Golden/G.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 850px)" href="styles/handset_index.css">
+    <link rel="stylesheet" media="screen and (max-width: 650px)" href="styles/hamburger-menu.css">
+
+</head>
+
+<body>
+ <style>
+    body{
+        background: -webkit-linear-gradient(rgb(242, 139, 135),rgb(40, 59, 235));
+        color: rgb(9, 10, 10);
+
+
+    }
+
+    .roomspic img {
+        max-width: 100%;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .roomspic img.zoomed {
+        transform: translate(-50%, -50%) scale(2); /* Ajusta el factor de escala aquí para agrandar más */
+            z-index: 10;
+            position: fixed; /* Cambia a fixed para posicionar la imagen en la pantalla */
+            top: 50%;
+            left: 50%;
+    }
+
+    /* Opcional: estilo para oscurecer el fondo al hacer clic en una imagen */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+    }
+
+    .overlay.active {
+        display: flex;
+    }
+    
+    
+ </style>
+    <div class="roomspic" id="r1"></div>
+ 
+        <div id="rsum1" class="s1">¿Qué opciones de salón deseas elegir para ti?</div>
+        <div id="rintro">Nuestros Salones</div>
+        <div id="rsum2">
+
+            
+
+           "Tu evento, nuestro espacio. Crea momentos inolvidables con nosotros."
+        </div>
+        <div class="roomspic" id="r1"><img src="salones/salonim1.jpg" alt="">
+            <div class="rdesc">
+                              
+                 <h2> GRAN SALON IMPERIAL </h2>
+                 <br>
+                 El Gran Salón Imperial ofrece un ambiente majestuoso y elegante, perfecto para bodas, conferencias y eventos de gala.
+                 <br><br> Servicio de restaurante 24 horas.
+                <br><br>
+
+                
+                <h3><b>
+                Capacidad: 
+            </b></h3>
+                Hasta 500 personas (banquete), 800 personas (teatro), 600 personas (cóctel).
+                <br> <h4> $200.000 por noche.
+                <br> $400.000 por dia. </h4>
+
+
+
+                <br><br>
+                <h3><b>
+                    Dimensiones:  
+                </b></h3>
+                800 m².
+
+                <br><br>
+                <h3><b>
+                    Equipo y Tecnología:  
+                </b></h3>
+                Proyector de alta definición, pantalla gigante, sistema de sonido 
+                envolvente, micrófonos inalámbricos, Wi-Fi de alta velocidad.
+
+
+                <br><br>
+                <h3><b>
+                    Mobiliario Disponible:  
+                </b></h3>
+                Mesas redondas, sillas acolchadas, podios de presentación.
+               
+
+                <br><br>
+                <h3><b>
+                    Iluminación y Sonido:  
+                </b></h3>
+                Iluminación ajustable y sistema de sonido de alta calidad.
+            
+
+                <br><br>
+                <h3><b>
+                    Climatización:  
+                </b></h3>
+                Aire acondicionado y calefacción central.
+
+                <br><br>
+                <h3><b>
+                    Servicios Adicionales
+                </b></h3>
+                Catering: Menús personalizados, opciones de bar completo.<br>
+                Personal de Apoyo: Coordinadores de eventos, técnicos de sonido.<br><br>
+
+                
+                <div style="text-align: left;">
+                    
+                    <img src="salones/salonim3.jpg" class="imagen2" style="width: 400px; height: 300px; padding: 2px;">
+                    <img src="salones/salonim4.jpg" class="imagen2" style="width: 400px; height: 300px; padding: 2px;"><br>
+                    <img src="salones/salonim5.jpg" class="imagen2" style="width: 400px; height: 300px; padding: 2px;">
+                    <img src="salones/salonim6.jpg" class="imagen2" style="width: 400px; height: 300px; padding: 2px;">
+
+                    <div style="clear: both;"></div>
+                      
+                </div>
+
+                <br><br>
+                <h3><b>
+                    Opiniones y Testimonios
+                </b></h3>
+                Reseñas de Clientes:<br>
+                "El Gran Salón Imperial hizo que nuestra boda fuera inolvidable. El servicio y la atención al detalle fueron excepcionales." - Ana y José<br>
+                <br>
+
+                "Celebramos el cumpleaños de mi hija en el Gran Salón Imperial y fue una experiencia maravillosa. 
+                El equipo se encargó de todos los detalles y la decoración fue espectacular. ¡Definitivamente lo recomendamos 
+                para cualquier evento especial!" - Laura y Carlos.<br><br>
+
+                "¡Una experiencia gastronómica excepcional! Asistimos a una cena de gala en el Gran 
+                Salón Imperial y quedamos impresionados por la calidad de la comida y el servicio impecable. 
+                Definitivamente volveremos para futuros eventos." - Andrea y Santiago
+
+                <div class="btn">
+                  <a href="form_salon_reserva.html"> <button>RESERVAR</button></a>
+                </div>
+
+            </div>
+        </div>
+        
+            <div class="rdesc">
+                              
+                 <h2> SALA EJECUTIVA </h2>
+                 <br>
+                 La Sala Ejecutiva es ideal para reuniones de negocios, presentaciones y seminarios, ofreciendo un ambiente profesional y sofisticado.
+                 <br><br> Servicio de restaurante 24 horas.
+                <br><br>
+
+                
+                <h3><b>
+                Capacidad: 
+            </b></h3>
+            Hasta 100 personas (banquete), 150 personas (teatro), 120 personas (cóctel).
+                <br> <h4> $200.000 por noche.
+                <br> $400.000 por dia. </h4>
+
+
+
+                <br><br>
+                <h3><b>
+                    Dimensiones:  
+                </b></h3>
+                200 m².
+
+                <br><br>
+                <h3><b>
+                    Equipo y Tecnología:  
+                </b></h3>
+                Proyector, pantalla de presentación, sistema de sonido, micrófonos, Wi-Fi.
+
+                <br><br>
+                <h3><b>
+                    Mobiliario Disponible:  
+                </b></h3>
+                Mesas de conferencias, sillas ergonómicas, podios.
+
+                <br><br>
+                <h3><b>
+                    Iluminación y Sonido:  
+                </b></h3>
+                Iluminación ajustable, sistema de sonido profesional.
+
+                <br><br>
+                <h3><b>
+                    Climatización:  
+                </b></h3>
+                Aire acondicionado y calefacción central.
+
+                <br><br>
+                <h3><b>
+                    Servicios Adicionales
+                </b></h3>
+                Catering: Paquetes de coffee break, almuerzos ejecutivos.<br>
+                Personal de Apoyo: Asistente de eventos, técnico de sonido.
+                <div style="text-align: right;">
+                    
+                    <img src="salones/salonejec1.jpg" class="imagen2" style="width: 400px; height: 300px; padding: 2px;">
+                    <img src="salones/salonim4.jpg" class="imagen2" style="width: 400px; height: 300px; padding: 2px;"><br>
+                    <img src="salones/salonim5.jpg" class="imagen2" style="width: 400px; height: 300px; padding: 2px;">
+                    <img src="salones/salonim6.jpg" class="imagen2" style="width: 400px; height: 300px; padding: 2px;">
+
+                    <div style="clear: both;"></div>
+                      
+                </div>
+
+                <br><br>
+                <h3><b>
+                    Opiniones y Testimonios
+                </b></h3>
+                Reseñas de Clientes:<br>
+                "La Sala Ejecutiva fue el lugar perfecto para nuestra reunión de negocios. El ambiente sofisticado y profesional 
+                creó el entorno ideal para discusiones productivas. El equipo de eventos fue extremadamente servicial y aseguró 
+                que todo saliera sin problemas. ¡Sin duda volveremos para futuros encuentros!" - Laura, CEO de una empresa de consultoría<br>
+                <br>
+                "Como organizador de seminarios, he utilizado la Sala Ejecutiva en varias ocasiones y nunca me ha decepcionado. 
+                El ambiente profesional, las instalaciones modernas y el equipo atento hacen que sea mi primera opción para eventos de negocios.
+                Recibo constantes elogios de los participantes sobre la calidad del lugar y el servicio." - David, Organizador de Seminarios<br><br>
+
+                "Reservamos la Sala Ejecutiva para una presentación importante y superó nuestras expectativas. Desde el momento en que hicimos 
+                la reserva hasta el día del evento, el equipo estuvo en constante comunicación y se aseguró de que todo estuviera perfectamente preparado. 
+                ¡Definitivamente contribuyó al éxito de nuestra presentación!" - Marta, Gerente de Marketing
+
+                <div class="btn">
+                  <a href="form_salon_reserva.html"> <button>RESERVAR</button></a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div id="r3" class="roomspic"><img src="rooms/Hab3.jpg" alt="">
+            <div class="rdesc">
+                <h2> Habitacion VIP </h2>
+                <br>
+                Esta habitacion es de las mejores de nuestro hotel, Vive una experiencia VIP, su entorno lujoso la convierte en una de las mejores. <br><br>Ubicada en la zona mas alta, Cuenta con dos camas extragrandes, Jacuzzi, Cuadros de lujo, Baño extragrande con bañera interna, Comedor grande, Balcon con una vista hermosa a la ciudad. <br> <br> Incluye todos los servicios disponibles en nuestro hotel, sin costo adicional. <br>
+                <br> <h4>$700.000 por noche.
+                <br>  $1.500.000 por dia. </h4>    
+                
+                <div class="btn">
+                    <a href="formulariorecerva.html"> <button>RESERVAR</button></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="roomspic" id="r4"><img src="rooms/Hab4.jpg" alt="">
+            <div class="rdesc">
+                <h2> Habitacion VIP II </h2>
+                <br>
+                Esta habitacion es de las mas hermosas de nuestro hotel, Vive una experiencia VIP, su entorno colorido y lujoso la convierte en una experiencia inolvidable. <br><br>Ubicada en la zona mas alta, Cuenta con dos camas extragrandes, Jacuzzi, Cuadros de lujo, Baño extragrande con bañera interna, Comedor grande, Balcon con una vista hermosa a la ciudad. <br> <br> Incluye todos los servicios disponibles en nuestro hotel, sin costo adicional. <br>
+                <br> <h4>$700.000 por noche.
+                <br>  $1.500.000 por dia. </h4>
+                <div class="btn">
+                    <a href="formulariorecerva.html"> <button>RESERVAR</button></a>
+                </div>
+
+            </div>
+        </div>
+         <br> 
+          <div class="roomspic" id="r5"><img src="rooms/Hab5.jpg" alt="">
+            <div class="rdesc">
+                <h2> Habitacion Golden High </h2>
+                <br>
+                Esta habitacion cautiva con su extremada vista tan hermosa y acogedora, y su entorno cristalino. Esta habitacion cuenta con un espacio amplio, cama extragrande, entorno lujoso, baño grande, y todos sus servicios de internet y TV.<br><br> Ademas cuenta con todos los servicios de nuestro hotel incluidos sin costo adicional.<br>
+                <br> <h4>$800.000 por noche.
+                <br>  $1.700.000 por dia. </h4> 
+ 
+                <div class="btn">
+                    <a href="formulariorecerva.html"> <button>RESERVAR</button></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="roomspic" id="r6"><img src="rooms/Hab6.jpg" alt="">
+            <div class="rdesc">
+                              
+                 <h2> Habitacion Estandar </h2>
+                 <br>
+                Esta habitacion esta diseñada para aquellos dispuestos a pasar una estadia maravillosa sin muchos recursos, Habitacion estandar, Con agradable ambiente. <br><br>La habitacion cuenta con un amplio baño, una cama doble, aire acondicionado, una zona de trabajo adicional 
+                 acceso gratuito a Internet y vestidor. <br><br> Servicios adicionales: Servicio de habitaciones 24 horas, Servicio de restaurante todo el dia, Bajo petición.
+                <br>
+                <br> <h4> $200.000 por noche.
+                <br> $400.000 por dia. </h4>
+                <div class="btn">
+                    <a href="form_salon_reserva.html"> <button>RESERVAR</button></a>
+                </div>
+
+            </div>
+        </div>
+
+            <div class="roomspic" id="r6"><img src="rooms/Hab7.jpg" alt="">
+            <div class="rdesc">
+                              
+                 <h2> Habitacion Low Cost II </h2>
+                 <br>
+                 Se trata de una habitación con doble cama, perfecto para dos personas. Está ubicado en la planta alta con una excelente vista al mar, Con balcon.  Dispone de TV de pantalla plana de 32 pulgadas y todos sus servicios <br><br> La habitación tiene cocina, un amplio baño y disposición para adquirir todos nuestros servicios.
+                <br>
+                <br> <h4> $90.000 por noche.
+                <br> $200.000 por dia. </h4>
+                <div class="btn">
+                    <a href="form_salon_reserva.html"> <button>RESERVAR</button></a>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+     <br>
+     
+     <div class="btn">
+         <br>
+         <br>
+          <a href="index.html"><button id="btn">VOLVER</button></a>
+                    
+                    <br>
+                </div>  
+     
+      <footer>
+          
+        Copyright &copy; THE GOLDEN HOTEL/ All rights reserved.
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const images = document.querySelectorAll('.roomspic img');
+            const overlay = document.createElement('div');
+            overlay.classList.add('overlay');
+            document.body.appendChild(overlay);
+    
+            images.forEach(image => {
+                image.addEventListener('click', function () {
+                    if (this.classList.contains('zoomed')) {
+                        this.classList.remove('zoomed');
+                        overlay.classList.remove('active');
+                    } else {
+                        images.forEach(img => img.classList.remove('zoomed'));
+                        this.classList.add('zoomed');
+                        overlay.classList.add('active');
+                    }
+                });
+            });
+    
+            overlay.addEventListener('click', function () {
+                images.forEach(img => img.classList.remove('zoomed'));
+                overlay.classList.remove('active');
+            });
+        });
+    </script>
+    
+
+    
+    
+
+
+</body>
+
+</html>
